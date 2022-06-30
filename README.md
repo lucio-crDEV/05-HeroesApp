@@ -2,7 +2,9 @@
 
 Desarrollado en Angular (https://github.com/angular/angular-cli) - version 14.0.3.
 
-## Development server
+## Dervidor de desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ejecute `ng serve` para un servidor de desarrollo (flag -o para apertura automatica). 
+El proyecto cargara en `http://localhost:4200/`. 
 
+**La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
