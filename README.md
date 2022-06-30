@@ -13,4 +13,4 @@ Ejecute `ng serve` para un servidor de desarrollo (agregue la flag -o para apert
 
 El proyecto cargara en `http://localhost:4200/`. Las rutas puede revisarlas en app-routing.module.ts dentro del directorio src/app
 
-#**La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
+#La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
