@@ -2,10 +2,16 @@
 
 Desarrollado en Angular (https://github.com/angular/angular-cli) - version 14.0.3.
 
-## Dervidor de desarrollo
+Utilizando:
+  - Angular material: https://material.angular.io/guide/getting-started
+  - @angular/flex-layout: https://www.npmjs.com/package/@angular/flex-layout
+  - json-serve: https://www.npmjs.com/package/json-server
 
-Ejecute `ng serve` para un servidor de desarrollo (flag -o para apertura automatica). 
+## Servidor de desarrollo
+
+Ejecute `ng serve` para un servidor de desarrollo (agregue la flag -o para apertura automatica). 
 
 El proyecto cargara en `http://localhost:4200/`. 
+y las rutas puede revisarlas en el routin.module.ts
 
 **La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
