@@ -5,6 +5,38 @@
 </mat-grid-list>
 
 <ng-template #divHeroe>
-    <p> Aqui va la info del heroe, si, esta: </p>
-    {{heroe | json}}
+
+    <div 
+        fxLayaout="row" 
+        fxLayout.xs="column" 
+        fxLayoutGap="30px">
+
+        <div fxFlex="50">
+            <h1>{{ heroe.superhero }} <small>- {{ heroe.alter_ego }}</small> </h1>
+            <mat-divider></mat-divider>
+            <br>
+            <img [src]="heroe | imagen">
+        </div>
+
+        <div fxFlex="50">
+            <h1>{{ heroe.publisher }}</h1>
+            <mat-divider></mat-divider>
+
+            <mat-list>
+                <mat-list-item>Primera aparición: {{ heroe.first_appearance }}</mat-list-item>
+                <mat-list-item>Nombre original: {{ heroe.characters }}</mat-list-item>
+                <mat-list-item>Primera publicación: {{ heroe.publisher }}</mat-list-item>
+                <mat-list-item>Alter ego: {{ heroe.alter_ego }}</mat-list-item>
+            </mat-list>
+
+            <br>
+
+            <button mat-button color="warn" 
+                    (click)="regresar()">
+                Regresar
+            </button>
+
+        </div>
+    </div>
+
 </ng-template>

@@ -15,17 +15,12 @@ const routes = [
   {
     path: '404',
     component: ErrorPageComponent
-
   },
   {
     path: '**',
-    // component: ErrorPageComponent
     redirectTo: '404'
-
   }
 ]
-
-
 
 @NgModule({
   imports: [
@@ -33,4 +28,5 @@ const routes = [
   ],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
