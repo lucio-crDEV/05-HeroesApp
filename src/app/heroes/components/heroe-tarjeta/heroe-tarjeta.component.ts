@@ -8,7 +8,6 @@ import { Heroe } from '../../interfaces/heroes.interface';
     mat-card{
       margin: 1rem 0;
       min-width: 195px;
-      min-height: 655px;
     }
     @media(max-width: 1280px){
         mat-card{        
