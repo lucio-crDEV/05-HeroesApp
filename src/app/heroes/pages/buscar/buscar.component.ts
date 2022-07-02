@@ -9,8 +9,8 @@ import { HeroesService } from '../../services/heroes.service';
   selector: 'app-buscar',
   templateUrl: './buscar.component.html',
   styles: [`
-  .container{
-    height: 2rem !important;
+  .containerS{
+    width: 400px;
   }
   `]
 })
