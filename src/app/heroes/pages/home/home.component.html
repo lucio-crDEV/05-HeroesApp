@@ -1,1 +1,69 @@
-<p>home works!</p>
+<mat-sidenav-container fullscreen>
+    
+    <!-- sidenav desplegable -->
+    <mat-sidenav #sidenav mode="push">
+        <mat-toolbar color="primary">
+            <span>Opciones</span>
+        
+            <span class="spacer"></span>
+            
+            <button mat-icon-button
+                    (click)="sidenav.toggle()">
+                    <mat-icon>arrow_forward</mat-icon>
+
+            </button>
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <a  routerLink="./listado"
+                mat-list-item
+                (click)="sidenav.toggle()">
+                    <mat-icon mat-list-icon>workspace_premium</mat-icon>
+                    <span>Listado de Héroes</span>
+            </a>
+        </mat-nav-list>
+        <mat-nav-list>
+            <a  routerLink="./agregar"
+                mat-list-item
+                (click)="sidenav.toggle()">
+                    <mat-icon mat-list-icon>add</mat-icon>
+                    <span>Agregar Héroe</span>
+            </a>
+        </mat-nav-list>
+        <mat-nav-list>
+            <a  routerLink="./buscar"
+                mat-list-item
+                (click)="sidenav.toggle()">
+                    <mat-icon mat-list-icon>search</mat-icon>
+                    <span>Buscar Héroe</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+
+<!-- contenido principal -->
+    <mat-toolbar>
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>widgets</mat-icon>
+        </button>
+
+        <!-- spacer separa los contenidos del navbar -->
+        <span class="spacer"></span>
+        
+        
+        <button mat-button >
+            <span>
+                Logout
+            </span>
+            <mat-icon mat-icon-button >
+                exit_to_app
+            </mat-icon>
+        </button>
+    </mat-toolbar>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+
+
+</mat-sidenav-container>
