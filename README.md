@@ -7,7 +7,7 @@ Utilizando:
   - @angular/flex-layout: https://www.npmjs.com/package/@angular/flex-layout
   - json-serve: https://www.npmjs.com/package/json-server
 
-## Servidor de desarrollo
+## Levantar servidor
 
 Ejecute `ng serve` para un servidor de desarrollo (agregue la flag -o para apertura automatica). 
 
