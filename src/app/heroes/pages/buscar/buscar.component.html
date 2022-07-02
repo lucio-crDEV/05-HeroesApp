@@ -26,9 +26,9 @@
                 <mat-option value="" *ngIf="heroes.length === 0 && termino.trim().length > 0" >
                     No se encontro nada con el término {{ termino }}
                 </mat-option>
+
             </mat-autocomplete>
         </mat-form-field>
-
 
     </div>
 </div>
@@ -42,7 +42,7 @@
     fxLayout.xs="column"
     fxFlexOffset="20">
 
-    <app-heroe-tarjeta [heroe]="heroeSeleccionado">
+    <app-heroe-tarjeta class="containerS" [heroe]="heroeSeleccionado">
 
     </app-heroe-tarjeta>
 
