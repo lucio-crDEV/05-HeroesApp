@@ -10,6 +10,7 @@ Utilizando:
 ## Levantar servidor
 
 Ejecute `ng serve` para un servidor de desarrollo (agregue la flag -o para apertura automatica). 
+Para levantar la API rest debe ejecutar `json-serve --watch db.json` o el nombre de su json, el que use yo se los dejo: https://gist.githubusercontent.com/Klerith/403c91e61d3c87284beb0dd138619958/raw/ff4f84e46b3aebb3d4870b4c571b6b719b3e041d/db.json .
 
 El proyecto cargara en `http://localhost:4200/`. Las rutas puede revisarlas en app-routing.module.ts dentro del directorio src/app
 
