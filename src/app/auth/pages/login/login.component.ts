@@ -12,9 +12,7 @@ export class LoginComponent {
   constructor(
     private router: Router,
     private authService: AuthService
-  ) {
-
-  }
+  ) { }
 
   login() {
     // Ir al backend
@@ -23,17 +21,11 @@ export class LoginComponent {
     this.authService.login()
       .subscribe( resp => {
 
-        console.log(resp)
-
         if(resp){
           this.router.navigate([`./heroes`])
         }
 
-
       })
-
-
-
   }
 
 }

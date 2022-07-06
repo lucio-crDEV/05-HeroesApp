@@ -30,9 +30,8 @@ export class HomeComponent implements OnInit {
   }
 
   logout() {
-    // Ir al backend
-    // Traer un usuario con un servicio
-    this.router.navigate([`./auth`])
+    this.authService.logout()
+    this.router.navigate([`./404`])
   }
 
 
